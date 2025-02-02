@@ -3,14 +3,7 @@
 This repository provides the necessary materials to run the project work for the course *Fundamentals of Robotics* at the University of Trento for the academic year 2024-2025.
 
 ---
-
-## Features
-- **Simulation visualization**: Tools to interact with the UR5 simulation in a graphical environment.
-- **Example ROS 2 nodes**: Includes a sample node for trajectory publication to help you get started.
-- **Launch files**: Ready-to-use launch files for interacting with the simulated or real UR5 robot.
-- **Bash scripts**: Simplifies running the UR5 simulation and ROS 2 environments with predefined commands.
-
----
+![demo.mp4](demo.mp4)
 
 ## Prerequisites
 - **Docker**: Ensure Docker is installed and running on your system.
