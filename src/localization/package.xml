@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>localization</name>
+  <version>0.0.0</version>
+  <description>Package used for Megablock localization</description>
+  <maintainer email="ale.daluch@gmail.com">Alessandro ùNardin</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Core ROS dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend> <!-- Provides PointCloud2 message type -->
+  <exec_depend>cv_bridge</exec_depend> <!-- Converts between ROS and OpenCV formats -->
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>localization_interfaces</exec_depend>
+
+
+  <!-- Python libraries -->
+  <exec_depend>python3-ultralytics-pip</exec_depend> <!-- YOLO model -->
+  <exec_depend>python3-numpy</exec_depend> <!-- NumPy -->
+  <exec_depend>python3-opencv</exec_depend> <!-- OpenCV (cv2) -->
+  <exec_depend>python3-pip</exec_depend> <!-- Pip for Python package management -->
+  <exec_depend>python-trimesh-pip</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

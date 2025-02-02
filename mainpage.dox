@@ -1,0 +1,34 @@
+/**
+ * @mainpage Robotics Megablock Project Documentation
+ *
+ * @section intro_sec Introduction
+ *
+ * Welcome to the **Robotics Megablock Project** documentation.
+ *
+ * This project involves grabbing and moving some random blocks positioned on a table.
+ * It is organized into several ROS2 packages, each focusing on a specific aspect of the project:
+ *
+ * - **@ref ur5_motion_cpp "Motion"**  
+ *   This package handles motion control for the UR5 robot.
+ *
+ * - **@ref ur5_planning "Planning"**  
+ *   This package contains planning algorithms for robot motion.
+ *
+ * - **@ref localization "Localization"**  
+ *   This package manages object detection and pose estimation.
+ *
+ * Click on the links above to view detailed documentation for each package.
+ *
+ * @section install_sec Installation
+ *
+ * Provide installation instructions here.
+ *
+ * @section usage_sec Usage
+ *
+ * Provide usage instructions here.
+ *
+ * @section contact_sec Contact
+ *
+ * For more information, please contact the project maintainer.
+ */
+

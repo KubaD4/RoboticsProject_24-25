@@ -1,0 +1,11 @@
+#Request
+---
+#Response
+string[] block_names
+float64[] positions_x
+float64[] positions_y
+float64[] positions_z
+float64[] orientations_x
+float64[] orientations_y
+float64[] orientations_z
+float64[] orientations_w

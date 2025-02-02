@@ -1,0 +1,24 @@
+float64 x
+float64 y
+float64 z
+float64 r_x
+float64 r_y
+float64 r_z
+float64 w
+---
+int32 error_code
+int32 SUCCESSFUL = 0
+int32 INVALID_GOAL = -1
+int32 INVALID_JOINTS = -2
+int32 OLD_HEADER_TIMESTAMP = -3
+int32 PATH_TOLERANCE_VIOLATED = -4
+int32 GOAL_TOLERANCE_VIOLATED = -5
+int32 INVERSE_KINEMATICS_ERROR = -6
+---
+float64 x
+float64 y
+float64 z
+float64 r_x
+float64 r_y
+float64 r_z
+float64 w
