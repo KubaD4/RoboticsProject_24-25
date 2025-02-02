@@ -3,7 +3,7 @@
 This repository provides the necessary materials to run the project work for the course *Fundamentals of Robotics* at the University of Trento for the academic year 2024-2025.
 
 ---
-![demo.mp4](demo.mp4)
+[demo.mp4](demo.mp4)
 
 ## Prerequisites
 - **Docker**: Ensure Docker is installed and running on your system.
