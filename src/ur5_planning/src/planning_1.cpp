@@ -89,20 +89,20 @@ public:
     bool run() {
         RCLCPP_INFO(node_->get_logger(), "Starting robot control sequence...");
 
-        RCLCPP_INFO(node_->get_logger(), "Step 2: Opening gripper...");
+        RCLCPP_INFO(node_->get_logger(), "Opening gripper...");
         if (!openGripper()) {
             RCLCPP_ERROR(node_->get_logger(), "Failed to open gripper, aborting sequence");
             return false;
         }
 
         //MOVE TO NEUTRAL POSITION
-        RCLCPP_INFO(node_->get_logger(), "Step 5: Moving to deposit position...");
+        RCLCPP_INFO(node_->get_logger(), "Moving to deposit position...");
         if (!moveToNeutral()) {
             RCLCPP_ERROR(node_->get_logger(), "Failed to move to target, aborting sequence");
             return false;
         }
         
-        RCLCPP_INFO(node_->get_logger(), "Step 1: Getting block positions...");
+        RCLCPP_INFO(node_->get_logger(), "Getting block positions...");
         if (!getBlockPositions()) {
             RCLCPP_ERROR(node_->get_logger(), "Failed to get block positions, aborting sequence");
             return false;
@@ -112,42 +112,42 @@ public:
 
         for (int i = 0; i < detected_blocks; i++) {
             //REPEAT FOR EACH BLOCK
-            RCLCPP_INFO(node_->get_logger(), "Step 3: Moving to target position...");
+            RCLCPP_INFO(node_->get_logger(), "Moving to target position...");
             if (!moveToTarget(i)) {
                 RCLCPP_ERROR(node_->get_logger(), "Failed to move to target, aborting sequence");
                 return false;
             }
 
             //CLOSE GRIPPER
-            RCLCPP_INFO(node_->get_logger(), "Step 4: Closing gripper...");
+            RCLCPP_INFO(node_->get_logger(), "Closing gripper...");
             if (!closeGripper()) {
                 RCLCPP_ERROR(node_->get_logger(), "Failed to open gripper, aborting sequence");
                 return false;
             }
 
             //PUT THE BLOCK IN THE RIGHT POSITION
-            RCLCPP_INFO(node_->get_logger(), "Step 5: Moving to deposit position...");
+            RCLCPP_INFO(node_->get_logger(), "Moving to deposit position...");
             if (!moveToDeposit(i)) {
                 RCLCPP_ERROR(node_->get_logger(), "Failed to move to target, aborting sequence");
                 return false;
             }
 
             //OPEN GRIPPER
-            RCLCPP_INFO(node_->get_logger(), "Step 6: Opening gripper...");
+            RCLCPP_INFO(node_->get_logger(), "Opening gripper...");
             if (!openGripper()) {
                 RCLCPP_ERROR(node_->get_logger(), "Failed to open gripper, aborting sequence");
                 return false;
             }
 
             //MOVE TO NEUTRAL POSITION
-            RCLCPP_INFO(node_->get_logger(), "Step 5: Moving to deposit position...");
+            RCLCPP_INFO(node_->get_logger(), "Moving to deposit position...");
             if (!moveToNeutral()) {
                 RCLCPP_ERROR(node_->get_logger(), "Failed to move to target, aborting sequence");
                 return false;
             }
             
             //READ AGAIN POSITIONS
-            RCLCPP_INFO(node_->get_logger(), "Step 1: Getting block positions...");
+            RCLCPP_INFO(node_->get_logger(), "Getting block positions...");
             if (!getBlockPositions()) {
                 RCLCPP_ERROR(node_->get_logger(), "Failed to get block positions, aborting sequence");
                 return false;

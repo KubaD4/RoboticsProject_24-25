@@ -159,7 +159,7 @@ class DetectionNode(Node):
                         })
 
                     # Sort by distance (descending).
-                    block_infos.sort(key=lambda x: x['distance'], reverse=True)
+                    block_infos.sort(key=lambda x: x['distance'], reverse=False)
 
                     # Fill response fields.
                     response.block_names = [block['name'] for block in block_infos]
