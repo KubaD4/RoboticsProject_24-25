@@ -4,6 +4,8 @@ This repository provides the necessary materials to run the project work for the
 
 ---
 
+![demo.gif](demo.gif)
+
 ## Prerequisites
 - **Docker**: Ensure Docker is installed and running on your system.
 
