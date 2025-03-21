@@ -1,6 +1,7 @@
 # UR5 Simulation Repository
 
 This repository provides the necessary materials to run the project work for the course *Fundamentals of Robotics* at the University of Trento for the academic year 2024-2025.
+The project was developed by Alesandro Nardin, Kuba Di Quattro and Francesco Martella.
 
 ---
 
